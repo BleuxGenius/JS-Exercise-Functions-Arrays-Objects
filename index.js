@@ -69,8 +69,7 @@ function makePersonObject(id, name, email) {
 
 function getName(name) {
   
-  name = 'dani'
-  var sentence = ' Hello, my name is {name}';
+  return `Hello, my name is ${person.name}`
 }
 
 /**
@@ -86,11 +85,17 @@ function getName(name) {
  *         and returns a string like `Hello, my name is {name}`.
  *         where `{name}` is the name passed into `makeSmartPerson`.
 */
-function makeSmartPerson(/* code here */) {
-  /* code here */
+function makeSmartPerson(name) {
+  return {
+    name = name;
+  function sum(num1,num2) {
+    return (num1 + num2)
+  },
+  function speak() {
+    return `Hello, my name is ${name}`
+  }
 }
-
-
+}
 
 
 
@@ -149,7 +154,8 @@ function get3rdCar(inventory) {
  * it will return `This is a Lincoln Navigator`.
 */
 function getCarInfoByIndex(inventory, index) {
-  /* code here */
+  return `this is a ${inventory[index].car_make}
+  ${inventory[index].car_model}`
 }
 
 /**
